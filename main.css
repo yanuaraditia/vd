@@ -1,0 +1,103 @@
+:root {
+    --primary: #563d7c;
+    --primary-trans: rgb(86,61,124,.2);
+    --fontA: 'Roboto',sans-serif;
+    --fontB: 'Google Sans',sans-serif;
+
+    --dark: #333;
+    --dark-semi: #777;
+    --shadow-1: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+html, body {
+    font-family: var(--fontA);
+}
+a {
+    color: var(--primary);
+}
+.btm-nav {
+    font-family: var(--fontB);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #ccc;
+}
+.btm-nav a {
+    text-align: center;
+    padding: .5rem .25rem;
+    font-weight: 500;
+    color: var(--dark-semi);
+}
+.btm-nav a.active {
+    font-weight: 700;
+    color: var(--primary);
+}
+.btm-nav a span {
+    display: block;
+}
+@media (max-width:991px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        background: var(--primary);
+        z-index: 999;
+        padding: .75rem 1rem;
+    }
+    .navbar-brand {
+        color: #fff;
+    }
+    .navbar-toggler {
+        color: #fff;
+    }
+    .navbar-collapse:not(.show) {
+        display: inherit;
+        transform: translateX(-50vw);
+    }
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 50vw;
+        background: #fff;
+        align-items: flex-start;
+        box-shadow: var(--shadow-1);
+        transition: all .2s ease-in-out;
+    }
+    .navbar-collapse .navbar-nav {
+        font-family: var(--fontB);
+        width: 100%;
+    }
+    .navbar-collapse .navbar-nav .nav-link {
+        font-weight: 500;
+        color: var(--dark-semi);
+        padding: .75rem 2rem;
+    }
+    .navbar-collapse .navbar-nav .nav-link:hover {
+        background: #eee;
+    }
+    .navbar-collapse .navbar-nav .nav-link.active {
+        background: var(--primary);
+        color: #fff;
+    }
+    .navbar-collapse .navbar-nav .nav-link svg {
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    .navbar-collapse .nav-overlay {
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        right: 0;
+        width: 50vw;
+        z-index: 999;
+        transition: all .1s ease-in-out;
+    }
+    .navbar-collapse.show .nav-overlay {
+        background: rgba(0,0,0,.14);
+    }
+}
