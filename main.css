@@ -585,7 +585,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.display-1,.display-2,.display-3,.disp
 }
 .navbar-collapse .profile-nav .nav-action {
     position: relative;
-    padding: .5rem 2rem;
+    padding: .5rem 1.5em;
 }
 .navbar-collapse .profile-nav .nav-action .nav-link {
     padding: .5rem 0;
@@ -646,6 +646,9 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.display-1,.display-2,.display-3,.disp
     }
 }
 @media screen and (max-width:991px) {
+    .navbar-toggler {
+        padding: .25rem;
+    }
     .navbar-collapse {
         width: 60vw;
     }
@@ -654,10 +657,5 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.display-1,.display-2,.display-3,.disp
     }
     .navbar-collapse:not(.show) {
         transform: translateX(-60vw);
-    }
-}
-@media screen and (max-width:768px) {
-    .form-control {
-        border-width: 1px;
     }
 }
