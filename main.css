@@ -627,6 +627,9 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.display-1,.display-2,.display-3,.disp
     .navbar-collapse .nav-overlay {
         width: 40vw;
     }
+    .navbar-collapse .navbar-nav .nav-link {
+        padding: 1rem 1.5rem;
+    }
     .navbar-collapse:not(.show) {
         transform: translateX(-60vw);
     }
@@ -652,6 +655,6 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.display-1,.display-2,.display-3,.disp
     }
     .btm-nav a .span {
         display: block;
-        font-size: 10px;
+        font-size: 11px;
     }    
 }
