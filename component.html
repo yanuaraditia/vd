@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans:300,400,500,700|Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navbar main-navbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i data-feather="menu"></i>
+            </button>
+            <a class="navbar-brand mr-auto" href="#">Zed</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="profile-nav">
+                    <figure class="px-4">
+                        <img class="_rounded" src="images/user.jpg" alt="User picture">
+                    </figure>
+                    <div class="nav-action">
+                        <a href="#" class="nav-link">
+                            <span class="d-block">Zero Brain</span>
+                            <small class="d-block">zero@gmail.com</small>
+                        </a>
+                        <div class="dropdown dropleft">
+                            <button class="btn dropdown-toggle" type="button" id="userMenuDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="more-vertical"></i></button>
+                            <div class="dropdown-menu" aria-labelledby="userMenuDrop">
+                                <a class="dropdown-item active" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <ul class="navbar-nav mr-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i data-feather=home></i>Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="component.html"><i data-feather="layout"></i>Component</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html"><i data-feather="user"></i>Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="icons.html"><i data-feather="compass"></i>Icons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tables.html"><i data-feather="list"></i>Tables</a>
+                    </li>
+                    <div class="dropdown-divider"></div>
+                    <span class="label px-4 py-2">External</span>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i data-feather="shopping-bag"></i> Promos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i data-feather="credit-card"></i> Payment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i data-feather="users"></i> Social</a>
+                    </li>
+                    <div class="dropdown-divider"></div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i data-feather="shopping-bag"></i> Promos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i data-feather="credit-card"></i> Payment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i data-feather="users"></i> Social</a>
+                    </li>
+                    <div class="dropdown-divider"></div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Report Abuse</a>
+                    </li>
+                </ul>
+                <div class="nav-overlay"></div>
+            </div>
+        </nav>
+        <main class="main-wrapper bg-grey">
+            <section class="card-section">
+                <div class="container-fluid">
+                    <h1 class="py-3">Card Modifier</h1>
+                    <div class="row">
+                        <div class="col-12 col-lg-3">
+                            <div class="card">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <h6 class="card-subtitle">by John Doe</h6>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>        
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <h6 class="card-subtitle">by John Doe</h6>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" class="card-link">Link</a>
+                                    <a href="#" class="card-link">Read</a>    
+                                    <div class="card-footer-btn ml-auto d-flex">
+                                        <a href="#"><i data-feather="heart"></i></a>
+                                        <a href="#"><i data-feather="share-2"></i></a>
+                                        <a href="#"><i data-feather="more-vertical"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <div class="card">
+                                <div class="card-header">
+                                  Featured
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <h6 class="card-subtitle">by John Doe</h6>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" class="card-link">Link</a>
+                                    <a href="#" class="card-link">Read</a>    
+                                    <div class="card-footer-btn ml-auto d-flex">
+                                        <a href="#"><i data-feather="heart"></i></a>
+                                        <a href="#"><i data-feather="share-2"></i></a>
+                                        <a href="#"><i data-feather="more-vertical"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <div class="card slag">
+                                <div class="card-header">
+                                  Featured
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <h6 class="card-subtitle">by John Doe</h6>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" class="card-link">Link</a>
+                                    <a href="#" class="card-link">Read</a>    
+                                    <div class="card-footer-btn ml-auto d-flex">
+                                        <a href="#"><i data-feather="heart"></i></a>
+                                        <a href="#"><i data-feather="share-2"></i></a>
+                                        <a href="#"><i data-feather="more-vertical"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12 col-lg-3">
+                            <div class="card">
+                                <img src="images/bg-sidebar.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <div class="card">
+                                <img src="images/bg-sidebar.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <h6 class="card-subtitle">by John Doe</h6>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" class="card-link">Link</a>
+                                    <a href="#" class="card-link">Read</a>    
+                                    <div class="card-footer-btn ml-auto d-flex">
+                                        <a href="#"><i data-feather="heart"></i></a>
+                                        <a href="#"><i data-feather="share-2"></i></a>
+                                        <a href="#"><i data-feather="more-vertical"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <div class="card">
+                                <img src="images/bg-sidebar.jpg" class="card-img-top" alt="...">
+                                <div class="card-header">
+                                  Featured
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <h6 class="card-subtitle">by John Doe</h6>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" class="card-link">Link</a>
+                                    <a href="#" class="card-link">Read</a>    
+                                    <div class="card-footer-btn ml-auto d-flex">
+                                        <a href="#"><i data-feather="heart"></i></a>
+                                        <a href="#"><i data-feather="share-2"></i></a>
+                                        <a href="#"><i data-feather="more-vertical"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <div class="card slag">
+                                <img src="images/bg-sidebar.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="card-section mt-2 mt-lg-4">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="card p-4">
+                                <h3>Form Control</h3>
+                                <hr/>
+                                <div class="form-group float-label">
+                                    <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder=" ">
+                                    <label for="exampleInputEmail2">Float Label</label>
+                                </div>
+                                <div class="form-group fix-label">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" ">
+                                    <label for="exampleInputEmail1">Fixed Label</label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Normal Form</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder=" ">
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck3">
+                                    <label class="form-check-label" for="exampleCheck3">Unchecked</label>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck4" checked>
+                                    <label class="form-check-label" for="exampleCheck4">Checked</label>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck7" disabled>
+                                    <label class="form-check-label" for="exampleCheck7">Disabled</label>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleChecka" disabled checked>
+                                    <label class="form-check-label" for="exampleChecka">Disabled Checked</label>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type=radio class="form-check-input" name="jon" id="exampleCheck2">
+                                    <label class="form-check-label" for="exampleCheck2">Radio 1</label>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type=radio class="form-check-input" name="jon" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Radio 2</label>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type=radio class="form-check-input" name="jon" id="exampleCheck5" checked>
+                                    <label class="form-check-label" for="exampleCheck5">Radio Checked</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="card p-4">
+                                <h3>Pertombolan Duniawi</h3>
+                                <hr/>
+                                <div class="btn-list">
+                                    <h4>Normal</h4>
+                                    <button type="button" class="btn">Natural</button>
+                                    <button type="button" class="btn btn-primary">Primary</button>
+                                    <button type="button" class="btn btn-secondary">Secondary</button>
+                                    <button type="button" class="btn btn-success">Success</button>
+                                    <button type="button" class="btn btn-danger">Danger</button>
+                                    <button type="button" class="btn btn-warning">Warning</button>
+                                    <button type="button" class="btn btn-info">Info</button>
+                                    <button type="button" class="btn btn-light">Light</button>
+                                    <button type="button" class="btn btn-dark">Dark</button>
+                                    <button type="button" class="btn btn-link">Link</button>
+                                </div>
+                                <div class="btn-list mt-4">
+                                    <h4>Outline</h4>
+                                    <button type="button" class="btn btn-outline-primary">Primary</button>
+                                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                                    <button type="button" class="btn btn-outline-success">Success</button>
+                                    <button type="button" class="btn btn-outline-danger">Danger</button>
+                                    <button type="button" class="btn btn-outline-warning">Warning</button>
+                                    <button type="button" class="btn btn-outline-info">Info</button>
+                                    <button type="button" class="btn btn-outline-light">Light</button>
+                                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                                    <button type="button" class="btn btn-outline-link">Link</button>
+                                </div>
+                                <div class="btn-list mt-4">
+                                    <h4>Modifier</h4>
+                                    <button type="button" class="btn btn-primary shadowed">Shadowed</button>
+                                    <button type="button" class="btn btn-success shadowed">Shadowed</button>
+                                    <button type="button" class="btn btn-primary btn-icon"><i data-feather="user-plus"></i></button>
+                                    <button type="button" class="btn btn-primary btn-icon _rounded"><i data-feather="user-plus"></i></button>
+                                    <button type="button" class="btn btn-primary btn-icon _rounded shadowed"><i data-feather="user-plus"></i></button>
+                                    <button type="button" class="btn btn-outline-primary btn-icon _rounded"><i data-feather="user-plus"></i></button>
+                                    <button type="button" class="btn btn-outline-primary btn-icon _rounded shadowed"><i data-feather="user-plus"></i></button>
+                                    <button type="button" class="btn btn-primary shadowed _rounded">Slag</button>
+                                    <button type="button" class="btn btn-primary"><i data-feather="heart"></i>Has Icon</button>
+                                    <button type="button" class="btn btn-primary shadowed"><i data-feather="heart"></i>Icon Shadowed</button>
+                                    <div class="dropdown">
+                                        <a class="btn btn-primary dropdown-toggle shadowed" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Dropdown link
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <a class="dropdown-item" href="#">Action</a>
+                                          <a class="dropdown-item" href="#">Another action</a>
+                                          <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-8 mt-lg-4">
+                            <div class="table-mother">
+                                <div class="table-header">
+                                    <h3 class="table-title">Tables</h3>
+                                    <button class="btn btn-primary shadowed">All Data</button>
+                                </div>
+                                <table class="table">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Dark Head</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table> 
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Normal Head</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table> 
+                                <nav class="pagination-nav" aria-label="page navigation example">
+                                    <ul class="pagination">
+                                        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 mt-lg-4">
+                            <div class="table-mother dark">
+                                <div class="table-header">
+                                    <h3 class="table-title">Tables Dark</h3>
+                                    <button class="btn btn-primary shadowed">All Data</button>
+                                </div>
+                                <table class="table table-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                    </tbody>
+                                </table>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <nav class="btm-nav">
+        <a href="#" class="active">
+            <span class="icon">
+                <i data-feather="home"></i>
+            </span>
+            <span class="span">Home</span>
+        </a>
+        <a href="#">
+            <span class="icon">
+                <i data-feather="layout"></i>
+            </span>
+            <span class="span">Parts</span>
+        </a>
+        <a href="#">
+            <span class="icon">
+                <i data-feather="list"></i>
+            </span>
+            <span class="span">Table</span>
+        </a>
+        <a href="#">
+            <span class="icon">
+                <i data-feather="settings"></i>
+            </span>
+            <span class="span">Settings</span>
+        </a>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
