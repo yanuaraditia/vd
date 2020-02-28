@@ -466,6 +466,10 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.display-1,.display-2,.display-3,.disp
     .btm-nav a .icon {
         display: block;
     }
+    .btm-nav a .icon svg {
+        width: 20px;
+        height: 20px;
+    }
     .btm-nav a .span {
         display: block;
     }    
