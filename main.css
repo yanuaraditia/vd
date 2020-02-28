@@ -212,7 +212,6 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.display-1,.display-2,.display-3,.disp
     height: auto;
     padding: .75rem 1rem;
     border: 1px solid #ccc;
-    box-shadow: 0 0 0 1px #ccc;
 }
 .form-control:focus,.form-control:not(:placeholder-shown) {
     border-color: var(--primary);
