@@ -591,72 +591,31 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.display-1,.display-2,.display-3,.disp
     background: var(--primary-trans);
     color: var(--primary);
 }
-@media screen and (min-width:992px) {
-    .navbar-collapse {
-        width: 20vw;
-    }
-    .navbar-collapse .nav-overlay {
-        width: 80vw;
-    }
-    .navbar-collapse:not(.show) {
-        transform: translateX(-30vw);
-    }
-    .navbar-collapse .navbar-nav .nav-link {
-        font-weight: 500;
-    }
-    .btm-nav a {
-        text-align: center;
-        padding: 1rem .25rem;
-        padding-left: 30px;
-        font-weight: 500;
-        color: var(--dark-semi);
-        text-decoration: none;
-        position: relative;
-    }
-    .btm-nav a .icon {
-        position: absolute;
-        left: 0;
-        transform: translateY(-3px);
-    }
+/* Modal */
+.modal-open .modal {
+    overflow: hidden!important;
 }
-@media screen and (max-width:991px) {
-    .navbar-toggler {
-        padding: .25rem;
-    }
-    .navbar-collapse {
-        width: 60vw;
-    }
-    .navbar-collapse .nav-overlay {
-        width: 40vw;
-    }
-    .navbar-collapse .navbar-nav .nav-link {
-        padding: 1rem 1.5rem;
-    }
-    .navbar-collapse:not(.show) {
-        transform: translateX(-60vw);
-    }
-    .card, .table-mother {
-        margin-bottom: 2rem;
-    }
-    .btm-nav a {
-        text-align: center;
-        padding: .5rem .25rem .35rem;
-        font-weight: 500;
-        color: var(--dark-semi);
-        text-decoration: none;
-    }
-    .btm-nav a:not(.active):hover {
-        color: var(--primary);
-    }
-    .btm-nav a .icon {
-        display: block;
-    }
-    .btm-nav a .icon svg {
-        width: 23px;
-        height: 23px;
-    }
-    .btm-nav a .span {
-        display: block;
-        font-size: 11px;
-    }    
+.modal-open {
+    padding-right: 0!important;
+}
+.modal .modal-dialog .modal-content {
+    border-radius: 22px;
+    border:none;        
+}
+.modal .modal-dialog .modal-header, 
+.modal .modal-dialog .modal-body,
+.modal .modal-dialog .modal-footer {
+    border: none;
+    padding: .75rem 1.5rem;
+}
+.modal .modal-dialog .modal-header {
+    padding: 1.5rem 1.5rem .5rem;
+}
+.modal .modal-header .close {
+    margin: 0;
+    padding: 0;
+}
+.modal-backdrop {
+    opacity: 1!important;
+    background: rgba(0,0,0,.3);
 }

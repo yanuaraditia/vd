@@ -1,0 +1,116 @@
+
+@media screen and (min-width:992px) {
+    .modal-backdrop {
+        backdrop-filter: blur(20px);
+    }
+    .navbar-collapse {
+        width: 20vw;
+    }
+    .navbar-collapse .nav-overlay {
+        width: 80vw;
+    }
+    .navbar-collapse:not(.show) {
+        transform: translateX(-30vw);
+    }
+    .navbar-collapse .navbar-nav .nav-link {
+        font-weight: 500;
+    }
+    .btm-nav a {
+        text-align: center;
+        padding: 1rem .25rem;
+        padding-left: 30px;
+        font-weight: 500;
+        color: var(--dark-semi);
+        text-decoration: none;
+        position: relative;
+    }
+    .btm-nav a .icon {
+        position: absolute;
+        left: 0;
+        transform: translateY(-3px);
+    }
+}
+@media screen and (max-width:991px) {
+    .navbar-toggler {
+        padding: .25rem;
+    }
+    .navbar-collapse {
+        width: 60vw;
+    }
+    .navbar-collapse .nav-overlay {
+        width: 40vw;
+    }
+    .navbar-collapse .navbar-nav .nav-link {
+        padding: 1rem 1.5rem;
+    }
+    .navbar-collapse:not(.show) {
+        transform: translateX(-60vw);
+    }
+    .card, .table-mother {
+        margin-bottom: 2rem;
+    }
+    .btm-nav a {
+        text-align: center;
+        padding: .5rem .25rem .35rem;
+        font-weight: 500;
+        color: var(--dark-semi);
+        text-decoration: none;
+    }
+    .btm-nav a:not(.active):hover {
+        color: var(--primary);
+    }
+    .btm-nav a .icon {
+        display: block;
+    }
+    .btm-nav a .icon svg {
+        width: 23px;
+        height: 23px;
+    }
+    .btm-nav a .span {
+        display: block;
+        font-size: 11px;
+    }
+    .modal {
+        padding: 0!important;
+    }
+    @keyframes fadeUp {
+        0% {
+            transform: translateY(200px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    .modal .modal-dialog.bottomed {
+        animation: fadeUp .5s;
+    }
+    .modal .modal-dialog.bottomed .close {
+        background: var(--dark-semi);
+        height: 6px;
+        border-radius: 5px;
+        position: absolute;
+        width: 100px;
+        left: calc(50vw - 50px);
+        top: 10px;
+    }
+    .modal .modal-dialog.bottomed .close svg {
+        display: none;
+    }
+    .modal .modal-dialog.bottomed .modal-header{
+        padding-top: 3rem;
+        position: relative;
+    }
+    .modal .modal-dialog.bottomed {
+        margin: 0;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: flex-end;
+        align-items: flex-end;
+        min-height: 100%;
+    }
+    .modal .modal-dialog.bottomed .modal-content {
+        border-radius: 22px 22px 0 0 ;
+    }
+}
