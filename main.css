@@ -1,10 +1,11 @@
 
 :root {
-    --primary: #e91e63;
-    --primary-dark: #c2185b;
-    --primary-light: #f06292;
-    --primary-grad: linear-gradient(to bottom, #e91e63, #c2185b);
-    --secondary: #e0e0e0;
+    --primary: #283593;
+    --primary-dark: #1a237e;
+    --primary-light: #5c6bc0;
+    --primary-grad: linear-gradient(to bottom, #283593, #1a237e);
+    --secondary: #00897b;
+    --secondary-grad: linear-gradient(to bottom, #00897b, #00695c);
     --success: #00c853;
     --danger: #d50000;
     --warning: #ff8f00;
@@ -75,7 +76,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.display-1,.display-2,.display-3,.disp
     text-transform: uppercase;
 }
 .card .card-text {
-    color: #555;
+    color: inherit;
 }
 .card .card-subtitle ~ .card-text {
     margin-top: 20px;
@@ -107,6 +108,28 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.display-1,.display-2,.display-3,.disp
 }
 .card .card-footer .card-footer-btn a:not(:last-child) {
     margin-right: 10px;
+}
+.card-home {
+    position: relative;
+    overflow: hidden;
+}
+.card-home .percentage {
+    padding-left: 30px;
+    position: relative;
+}
+.card-home .percentage svg {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 0;
+}
+.card-home .icon {
+    opacity: .3;
+    position: absolute;
+    right: -25px;
+    bottom: -25px;
 }
 /* #01#02 - Button */
 .btn-list .btn {
@@ -399,6 +422,10 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.display-1,.display-2,.display-3,.disp
 .bg-primary-grad {
     background: var(--primary-grad);
 }
+.bg-secondary-grad {
+    background: var(--secondary-grad);
+}
+
 .h-100 {
     height: 100vh;
 }
