@@ -60,6 +60,14 @@
                 </ul>
                 <div class="nav-overlay"></div>
             </div>
+            <div class="btn-right">
+                <button class="btn-top search" data-toggle="modal" data-target="#searchModal">
+                    <i data-feather="search"></i>
+                </button>
+                <button class="btn-top more">
+                    <i data-feather="more-vertical"></i>
+                </button>
+            </div>
         </nav>
         <main class="main-wrapper">
             <section>
@@ -67,6 +75,15 @@
                     <iframe src="https://feathericons.com/" frameborder="0" width="100%" height="450px"></iframe>
                 </div>
             </section>
+            <div class="modal fade search-modal" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <input type="text" class="form-control" focused placeholder="Search here...."/>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
     <nav class="btm-nav">
