@@ -1,5 +1,22 @@
 
 @media screen and (min-width:992px) {
+    :root {
+        --primary: #e91e63;
+        --primary-dark: #c2185b;
+        --primary-light: #f06292;
+        --primary-trans: rgb(240,98,146,.2);
+        --secondary: #e0e0e0;
+        --success: #00c853;
+        --danger: #d50000;
+        --warning: #ff8f00;
+        --info: #1976d2;
+        --fontA: 'Roboto',sans-serif;
+        --fontB: 'Google Sans',sans-serif;
+    
+        --dark: #333;
+        --dark-semi: #777;
+        --shadow-1: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+    }
     .modal-backdrop {
         backdrop-filter: blur(20px);
     }
@@ -31,6 +48,23 @@
     }
 }
 @media screen and (max-width:991px) {
+    :root {
+        --primary: #e91e63;
+        --primary-dark: #c2185b;
+        --primary-light: #f06292;
+        --primary-trans: rgb(240,98,146,.2);
+        --secondary: #e0e0e0;
+        --success: #00c853;
+        --danger: #d50000;
+        --warning: #ff8f00;
+        --info: #1976d2;
+        --fontA: 'Roboto',sans-serif;
+        --fontB: 'Google Sans',sans-serif;
+    
+        --dark: #333;
+        --dark-semi: #777;
+        --shadow-1: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.06);
+    }
     .navbar-toggler {
         padding: .25rem;
     }

@@ -1,20 +1,4 @@
-:root {
-    --primary: #e91e63;
-    --primary-dark: #c2185b;
-    --primary-light: #f06292;
-    --primary-trans: rgb(240,98,146,.2);
-    --secondary: #e0e0e0;
-    --success: #00c853;
-    --danger: #d50000;
-    --warning: #ff8f00;
-    --info: #1976d2;
-    --fontA: 'Roboto',sans-serif;
-    --fontB: 'Google Sans',sans-serif;
 
-    --dark: #333;
-    --dark-semi: #777;
-    --shadow-1: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
-}
 html, body {
     font-family: var(--fontA);
 }
@@ -52,10 +36,11 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.display-1,.display-2,.display-3,.disp
 }
 /* #01#01 - Card */
 .card {
+    --shad: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.06);
     border-radius: 6px;
     border: none;
-    -webkit-box-shadow:0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
-    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    -webkit-box-shadow: var(--shad);
+    box-shadow: var(--shad);
     position: relative;
 }
 .card.slag {
@@ -114,7 +99,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.display-1,.display-2,.display-3,.disp
     font-family: var(--fontB);
     font-weight: 500;
     border-radius: 4px;
-    padding: .4rem .75rem;
+    padding: .75rem 1.5rem;
 }
 .btn-icon {
     padding: .4rem;
