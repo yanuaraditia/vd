@@ -1,4 +1,3 @@
-$('.date-picker').datepicker();
 feather.replace();
 $(document).ready(function(){
     getHeight();
